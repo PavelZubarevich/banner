@@ -9,7 +9,71 @@
 </head>
 
 <body>
-
+  <div class="banner">
+    <picture class="banner__background">
+      <source srcset="assets/img/background/4@3x.png 3x" type="image/png">
+      <source srcset="assets/img/background/4@2x.png 2x" type="image/png">
+      <img src="assets/img/background/4.png" alt="banner background" />
+    </picture>
+    <div class="banner__container">
+      <div class="banner__top">
+        <button class="banner__closeBtn"></button>
+        <a href="" class="banner__restore i18nelement" data-i18n="Restore"></a>
+      </div>
+      <div class="banner__content">
+        <h1 class="banner__title i18nelement" data-i18n="Unlimited Access<br>to All Features"></h1>
+        <ul class="banner__list">
+          <li>
+            <div class="banner__listIcon">
+              <img src="assets/img/icons/unlimitedDocs.svg" alt="icon">
+            </div>
+            <span data-i18n="Unlimited documents" class="i18nelement"></span>
+          </li>
+          <li>
+            <div class="banner__listIcon">
+              <img src="assets/img/icons/export.svg" alt="icon">
+            </div>
+            <span data-i18n="Count mode" class="i18nelement"></span>
+          </li>
+          <li>
+            <div class="banner__listIcon">
+              <img src="assets/img/icons/noAds.svg" alt="icon">
+            </div>
+            <span data-i18n="Text recognition (OCR)" class="i18nelement"></span>
+          </li>
+        </ul>
+        <div class="banner__options">
+          <input type="radio" name="options" id="option_1" data-url="https://apple.com/" checked>
+          <label for="option_1" class="banner__option banner-option">
+            <img src="assets/img/shape-1.svg" alt="option background" class="banner-option__background">
+            <div class="banner-option__duration i18nelement" data-i18n="Monthly"></div>
+            <div class="banner-option__bigPrice i18nelement"
+              data-i18n="&lt;strong>{{price}}&lt;/strong>&lt;br>per month" data-price="$9.99"></div>
+            <div class="banner-option__label i18nelement" data-i18n="3 DAYS FREE"></div>
+            <div class="banner-option__price i18nelement" data-i18n="{{price}}/month" data-price="$9.99"></div>
+          </label>
+          <input type="radio" name="options" id="option_2" data-url="https://google.com/">
+          <label for="option_2" class="banner__option banner-option">
+            <img src="assets/img/shape-2.svg" alt="option background" class="banner-option__background">
+            <div class="banner-option__duration i18nelement" data-i18n="Annually"></div>
+            <div class="banner-option__bigPrice i18nelement" data-i18n="&lt;strong>{{price}}&lt;/strong>&lt;br>per year"
+              data-price="$19.99"></div>
+            <div class="banner-option__label i18nelement" data-i18n="MOST POPULAR"></div>
+            <div class="banner-option__price i18nelement" data-i18n="{{price}}/month" data-price="$1.66"></div>
+            <div class="banner-option__discount i18nelement" data-i18n="-83%"></div>
+          </label>
+        </div>
+        <a href="/" class="banner__continueBtn i18nelement" data-i18n="Continue"></a>
+        <div class="banner__bottom">
+          <p data-i18n="Auto-renewable. Cancel anytime." class="i18nelement"></p>
+          <div class="banner__bottomLinks">
+            <a href="#" data-i18n="Terms of Use" class="i18nelement"></a>
+            <a href="#" data-i18n="Privacy Policy" class="i18nelement"></a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
 </body>
 
 </html>
