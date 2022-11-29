@@ -46,6 +46,17 @@ function initDataI18nAttr() {
   }
 }
 
+function handleSelectOption() {
+  const radioBtns = document.querySelectorAll('input[name="options"]')
+  const continueBtn = document.querySelector('a.banner__continueBtn')
+
+  radioBtns.forEach(elem => {
+    if (elem.checked) continueBtn.href = elem.dataset.url
+    elem.addEventListener('change', (e) => continueBtn.href = e.target.dataset.url)
+  })
+}
+
 window.addEventListener('load', () => {
   initDataI18nAttr()
+  handleSelectOption()
 })
