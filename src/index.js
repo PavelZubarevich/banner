@@ -34,7 +34,10 @@ i18next.use(LanguageDetector).init({
       translation: zh
     },
   },
-  fallbackLng: 'en'
+  fallbackLng: 'en',
+  detection: {
+    lookupQuerystring: 'lang',
+  }
 })
 
 function initDataI18nAttr() {
